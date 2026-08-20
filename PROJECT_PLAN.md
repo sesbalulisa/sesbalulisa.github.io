@@ -70,32 +70,32 @@ my-blog/                      # 项目根目录
 
 ## 五、开发阶段规划
 
-### 阶段 0:环境准备
-- [ ] 安装 Hugo Extended 版(Windows:winget install Hugo.Hugo.Extended 或下载 zip 解压)
-- [ ] 创建 GitHub 账号/确认账号,配置本机 SSH key 或 Personal Access Token
-- [ ] 安装 gh CLI(可选,方便命令行创建仓库)
+### 阶段 0:环境准备 ✅ 已完成
+- [x] 安装 Hugo Extended 版(winget,当前 v0.164.0)
+- [x] 创建 GitHub 账号/确认账号(seabalulisa),配置 gh CLI 认证
+- [x] 安装 gh CLI 与 Go(用于 Hugo 模块下载)
 
-### 阶段 1:初始化项目(约 1 天)
-- [ ] 用 HugoBlox 官方 starter 初始化项目(或 `hugo new site` + 引入模块)
-- [ ] 配置站点信息(标题、作者、语言设为中文、主题配色)
-- [ ] 本地 `hugo server` 预览,确认首页/文章页正常
-- [ ] 提交到 GitHub 私有/公开仓库
+### 阶段 1:初始化项目 ✅ 已完成
+- [x] 用 HugoBlox 官方 starter 初始化项目(technical-blog 模板)
+- [x] 配置站点信息(标题 YGS blog、作者 Ygs、语言设为中文、主题配色)
+- [x] 本地 `hugo server` 预览确认
+- [x] 提交到 GitHub 仓库 sesbalulisa/sesbalulisa.github.io(已清理模板历史)
 
-### 阶段 2:搭建栏目与内容(约 2-3 天)
-- [ ] 编写首页区块(欢迎语、最新文章、标签)
-- [ ] 创建作者信息(头像、社交链接)
-- [ ] 撰写 2-3 篇示例文章,验证标签、目录、代码高亮、公式
-- [ ] 定制配色/字体,加入个人 LOGO
+### 阶段 2:搭建栏目与内容 ✅ 已完成
+- [x] 编写首页区块(欢迎语、最新文章、标签)
+- [x] 创建作者信息(头像、社交链接)
+- [x] 撰写 3 篇中文示例文章(博客搭建/代码示例/部署教程)
+- [x] 定制中文导航菜单与关于页
 
-### 阶段 3:部署上线(约 1 天)
-- [ ] 配置 GitHub Actions 工作流,构建并发布到 GitHub Pages
-- [ ] 绑定自定义域名(可选)
-- [ ] 验证 HTTPS、SEO、RSS 正常
-- [ ] 设置提交后自动部署,完成全流程验证
+### 阶段 3:部署上线 ✅ 已完成
+- [x] 配置 GitHub Actions 工作流(模板自带 deploy.yml)
+- [x] Pages 切换为 workflow 模式
+- [x] 验证 HTTPS、SEO、RSS 正常(线上已可访问)
+- [x] 验证「推送后自动部署」全流程
 
-### 阶段 4:持续运营
-- [ ] 撰写 Git 提交规范、写作工作流说明
-- [ ] 维护 README,记录文章发布步骤
+### 阶段 4:持续运营 ⬜ 进行中
+- [ ] 撰写 Git 提交规范、写作工作流说明(见 README)
+- [ ] 维护 README,记录文章发布步骤 ✅
 - [ ] 视需求开启 CMS、评论、站内搜索
 
 ## 六、部署架构
