@@ -1,0 +1,28 @@
+{{- $page := .page -}}
+{{- $posts := where site.RegularPages "Section" "blog" -}}
+
+<nav class="w-56 shrink-0 px-4 pt-6" aria-label="文章导航">
+  <div class="hb-scrollbar sticky top-16 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] overflow-y-auto pr-2">
+    <p class="mb-3 font-semibold tracking-tight">{{ T "post_navigation" | default "文章导航" }}</p>
+    <ul class="flex flex-col gap-2">
+      {{- range $posts.ByDate.Reverse -}}
+        {{- $active := eq $page.RelPermalink .RelPermalink -}}
+        <li>
+          <a href="{{ .RelPermalink }}"
+             class="block rounded-lg border px-3 py-2 transition-colors {{ if $active }}
+                    border-primary-600 bg-primary-100 dark:bg-primary-900/60 dark:border-primary-400
+                  {{ else }}
+                    border-neutral-200 hover:border-primary-500 hover:bg-neutral-50 dark:border-neutral-700 dark:hover:bg-neutral-800 dark:hover:border-primary-500
+                  {{ end }}">
+            <span class="block text-sm font-medium leading-snug {{ if $active }}text-primary-800 dark:text-primary-200{{ else }}text-neutral-800 dark:text-neutral-200{{ end }}">
+              {{- .Title -}}
+            </span>
+            <span class="mt-1 block text-xs text-neutral-500 dark:text-neutral-400">
+              {{- .Date | time.Format (site.Params.hugoblox.locale.date_format | default "2006-01-02") -}}
+            </span>
+          </a>
+        </li>
+      {{- end -}}
+    </ul>
+  </div>
+</nav>
