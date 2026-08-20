@@ -1,0 +1,23 @@
+# Languages
+#   Create a section for each of your site's languages.
+#   Documentation: https://docs.hugoblox.com/reference/language/
+
+# Default language
+zh:
+  locale: zh-Hans
+  title: 'YGS blog'
+  # Uncomment for multi-lingual sites, and move Chinese content into `zh` sub-folder.
+  #contentDir: content/zh
+
+# Uncomment the lines below to configure your website in a second language.
+#en:
+#  locale: en-us
+#  contentDir: content/en
+#  title: English website title...
+#  params:
+#    description: Site description in English...
+#  menu:
+#    main:
+#      - name: Home
+#        url: '/'
+#        weight: 1

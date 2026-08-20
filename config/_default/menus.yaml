@@ -1,0 +1,19 @@
+# Navigation Links
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: 首页
+    url: /
+    weight: 10
+  - name: 博客
+    url: blog/
+    weight: 20
+  - name: 标签
+    url: tags/
+    weight: 30
+  - name: 关于
+    url: about/
+    weight: 40
+  - name: 工具箱
+    url: uses/
+    weight: 50

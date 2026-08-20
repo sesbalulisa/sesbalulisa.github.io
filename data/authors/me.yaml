@@ -1,0 +1,20 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Ygs
+  given: Ygs
+  family: Ygs
+  pronouns: ""
+status:
+  icon: "☕️"
+role: 个人博客作者
+bio: 暂无
+affiliations: []
+links:
+  - icon: at-symbol
+    url: mailto:sesbalulisa@example.com
+    label: 给我发邮件
+  - icon: rss
+    url: ./blog/index.xml
+    label: 订阅博客 RSS
